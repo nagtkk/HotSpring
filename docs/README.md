@@ -67,7 +67,7 @@ const vdom = h(
     // children
     h('p', 'hello!'),
 
-    // just grouping (not affected to real DOM)
+    // just grouping (it does not affect the real DOM)
     [
         'other-text',
         h('span', 'other-child')
