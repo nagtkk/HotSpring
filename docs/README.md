@@ -23,6 +23,7 @@ a simplified VDOM library
 - [Frame count](./examples/runner.html?framecount.js)
 - [TODO list mock](./examples/runner.html?todolist.js)
 - [Trace rendering tree](./examples/runner.html?hooktree.js)
+- [PingPong](./examples/runner.html?pingpong.js)
 
 ...TODO
 

@@ -6,7 +6,9 @@ export declare type VAttr = {
     style?: string | CSSStyleDeclaration;
     [p: string]: any;
 };
-export declare type VArg = VArg[] | VNode | null | undefined | boolean | string | number | VAttr;
+export interface VArgArray extends Array<VArg> {
+}
+export declare type VArg = VArgArray | VNode | null | undefined | boolean | string | number | VAttr;
 export declare type VNode = (target: Element) => void;
 export declare type VComp<T extends Hash = {}> = (args: T, self: Element) => VArg;
 export declare type Cleanup = void | (() => void);
