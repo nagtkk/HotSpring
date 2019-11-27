@@ -1,7 +1,3 @@
-# ♨HotSpring
-
-a simplified VDOM library
-
 ## Requirements
 
 - ES6+
