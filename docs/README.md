@@ -33,6 +33,12 @@ use ES6 module
 import { h } from "./path/to/hotspring.js";
 ~~~
 
+via CDN
+
+~~~js
+import { h } from "https://cdn.jsdelivr.net/gh/nagtkk/HotSpring/dist/hotspring.min.js";
+~~~
+
 ### generate VDOM tree
 
 ~~~js
