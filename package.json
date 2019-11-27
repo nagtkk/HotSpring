@@ -1,0 +1,21 @@
+{
+    "name": "hotspring",
+    "description": "a simplified VDOM library",
+    "version": "1.0.0",
+    "author": "nagtkk",
+    "license": "MIT",
+    "module": "dist/hotspring.min.js",
+    "types": "dist/hotspring.d.ts",
+    "scripts": {
+        "transpile": "tsc",
+        "minify": "terser -c -m --mangle-props regex=/^_/ --ecma 8 --module -o dist/hotspring.min.js -- dist/hotspring.js",
+        "copydts": "cp dist/hotspring.d.ts dist/hotspring.min.d.ts",
+        "build": "npm run transpile && npm run minify && npm run copydts",
+        "docs": "cp dist/hotspring.* docs/examples/"
+    },
+    "devDependencies": {
+        "terser": "^4.4.0",
+        "typescript": "^3.7.2"
+    },
+    "dependencies": {}
+}
